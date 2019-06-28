@@ -5,7 +5,7 @@ class SearchBox extends Component {
 
     onFormSubmit = e => {
         e.preventDefault();
-        console.log(this.state.searchText);
+        this.props.onSubmit(this.state.searchText);
     }
 
     render() {
@@ -19,17 +19,14 @@ class SearchBox extends Component {
                             value={this.state.searchText}
                             onChange={ e => this.setState({ searchText: e.target.value}) }/>
                         <i className="circular search link icon" 
-                            onClick={ e => {
-                                this.setState({ searchText: e.target.parentElement.children[0].value});
-                                console.log(this.state.searchText);
-                            }}
+                            onClick={this.onFormSubmit}
                         />
                     </div>
                 </form>
         </div>
         );
     }
-};
+}
 
 
 export default SearchBox;
