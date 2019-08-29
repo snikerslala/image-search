@@ -1,6 +1,6 @@
 # image-search
-A website build with React to display pictures based on the search term.
 
+A website build with React to display pictures based on the search term.
 
 <h1>Features</h1>
 <ul>
