@@ -12,4 +12,5 @@ A website build with React to display pictures based on the search term.
   <li>JavaScript</li>
   <li>React</li>
   <li>unsplash API</li>
+  <li>Semantic UI</li>
 </ul>

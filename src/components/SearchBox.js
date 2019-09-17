@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class SearchBox extends Component {
-  state = { searchText: "" };
+  state = { searchText: '' };
 
   onFormSubmit = e => {
     e.preventDefault();
@@ -12,7 +12,7 @@ class SearchBox extends Component {
     return (
       <div className="ui segment">
         <form onSubmit={this.onFormSubmit} className="ui form field">
-          <label>Image Search</label>
+          <label>Image Search: </label>
           <div className="ui icon input">
             <input
               type="text"
